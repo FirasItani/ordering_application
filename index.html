@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container" id="container">
+        <img src="https://as1.ftcdn.net/v2/jpg/02/77/45/40/1000_F_277454095_IE18yiuyfYD2ikSvRuKoIrC4MOZ6cgpl.jpg"
+            class="image">
+        <div class="brand-text-container">
+            <h1 class="brand-name">〞Jimmy's Diner〝</h1>
+            <p class="brand-text"> The best burgers and pizzas in town.</p>
+        </div>
+        <section class="menus" id="menus">
+            <!-- here code -->
+        </section>
+
+        <section class="order" id="order">
+            <div class="your-order" id="your-order"></div>
+            <div class="order-container" id="order-container"></div>
+            <div class="bottom" id="bottom"></div>
+        </section>
+
+        <section class="modal" id="modal">
+
+            <div class="inner-modal">
+                <div class="close-btn-container">
+                    <button class="close-btn" id="close-btn">X</button>
+                </div>
+                <h2 class="text-modal">Enter card details</h2>
+                <form id="form-modal">
+                    <input type="text" placeholder="Enter your full name" name="fullName" id="fullName"
+                        aria-label="Full name" required>
+                    <input type="number" placeholder="Enter card number" name="cardNumber" id="cardNumber"
+                        aria-label="Enter your card number" required>
+                    <input type="number" placeholder="Enter CVV" id="cardCVV" name="cardCVV" aria-label="Enter CVV"
+                        required>
+                    <div class="pay-btn-container">
+                        <button type="submit" class="pay-btn">Pay</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
